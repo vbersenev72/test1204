@@ -1,9 +1,9 @@
 const express = require('express')
 const pg = require('pg')
 const axios = require('axios')
+require('dotenv').config({path: '.env'});
+const { PORT } = process.env
 
-
-const PORT = 5000
 
 const config = {
     host: '<your-db-server-name>.postgres.database.azure.com',
